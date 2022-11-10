@@ -10,7 +10,7 @@ def hi_gamer():
 
 
 def get_rules(gamers):
-    total_sweets = 200
+    total_sweets = 2021
     step = 28
     first = int(input(
         f'{gamers[0]} press 1 if u wanna go 1st or other digit if dont\n'))
@@ -47,7 +47,7 @@ def play_game(rules, gamers):
         else:
             print('gg')
         count += 1
-    return gamers[not count % 2]
+    return gamers[count % 2]
 
 
 gamers = hi_gamer()
